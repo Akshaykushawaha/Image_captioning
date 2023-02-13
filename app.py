@@ -1,6 +1,11 @@
 from flask import Flask, render_template, redirect, request
 import shutil
 from datetime import datetime
+import pip
+pip.main(["gtts", package])
+pip.main(["googletrans", package])
+pip.main(["pandas", package])
+translator = Translator()
 import Caption_it
 
 import os
