@@ -5,7 +5,6 @@ import pip
 pip.main(['install',"gtts"])
 pip.main(['install',"googletrans"])
 pip.main(['install',"pandas"])
-translator = Translator()
 import Caption_it
 
 import os
@@ -14,14 +13,9 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 # __name__ == __main__
 app = Flask(__name__)
 
-
-import pip
-pip.main(["gtts", package])
-pip.main(["googletrans", package])
-translator = Translator()
-
 from gtts import gTTS
 from googletrans import *
+translator = Translator()
 
 
 @app.route('/')
