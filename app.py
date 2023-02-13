@@ -1,6 +1,5 @@
 from flask import Flask, render_template, redirect, request
 import webbrowser
-from gtts import gTTS
 import shutil
 from datetime import datetime
 
@@ -13,8 +12,13 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 # __name__ == __main__
 app = Flask(__name__)
+
+
 import pip
 pip.main(["gtts", package])
+
+from gtts import gTTS
+
 
 @app.route('/')
 def hello():
