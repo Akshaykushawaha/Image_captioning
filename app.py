@@ -13,7 +13,8 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 # __name__ == __main__
 app = Flask(__name__)
-
+import pip
+pip.main(["gtts", package])
 
 @app.route('/')
 def hello():
