@@ -2,9 +2,9 @@ from flask import Flask, render_template, redirect, request
 import shutil
 from datetime import datetime
 import pip
-pip.main(["gtts", package])
-pip.main(["googletrans", package])
-pip.main(["pandas", package])
+pip.main(['install',"gtts"])
+pip.main(['install',"googletrans"])
+pip.main(['install',"pandas"])
 translator = Translator()
 import Caption_it
 
