@@ -46,5 +46,4 @@ def marks():
 if __name__ == '__main__':
 	# app.debug = True
 	# due to versions of keras we need to pass another paramter threaded = Flase to this run function
-    webbrowser.open("http://127.0.0.1:5000/", new=2)
     app.run(debug = False, threaded = False)
