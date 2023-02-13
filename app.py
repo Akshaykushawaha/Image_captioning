@@ -7,6 +7,7 @@ pip.main(['install',"googletrans"])
 pip.main(['install',"pandas"])
 pip.main(['install',"matplotlib"])
 pip.main(['install',"keras"])
+pip.main(['install',"tensorflow"])
 import Caption_it
 
 import os
