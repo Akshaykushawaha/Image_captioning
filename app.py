@@ -5,6 +5,7 @@ import pip
 pip.main(['install',"gtts"])
 pip.main(['install',"googletrans"])
 pip.main(['install',"pandas"])
+pip.main(['install',"matplotlib"])
 import Caption_it
 
 import os
