@@ -1,5 +1,4 @@
 from flask import Flask, render_template, redirect, request
-import webbrowser
 import shutil
 from datetime import datetime
 
@@ -16,6 +15,7 @@ app = Flask(__name__)
 
 import pip
 pip.main(["gtts", package])
+pip.main(["googletrans", package])
 
 from gtts import gTTS
 
