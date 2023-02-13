@@ -1,9 +1,6 @@
 from flask import Flask, render_template, redirect, request
 import shutil
 from datetime import datetime
-
-from googletrans import *
-translator = Translator()
 import Caption_it
 
 import os
@@ -16,8 +13,10 @@ app = Flask(__name__)
 import pip
 pip.main(["gtts", package])
 pip.main(["googletrans", package])
+translator = Translator()
 
 from gtts import gTTS
+from googletrans import *
 
 
 @app.route('/')
